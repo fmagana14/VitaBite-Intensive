@@ -1,0 +1,50 @@
+header{
+    background-color: red;
+    font-size: 40px;
+}
+body{
+    background-color: #9690E5;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    color: #232B4B;
+}
+div.profile-button{
+    background-color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+#pbutton{
+    font-size: 40px;
+    color: red;
+    text-align: right;
+    background-color:black;
+}
+#vitaID{
+    font-size: 40px;
+    text-align: left;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    background-color:#E6CBFF;
+    justify-content: space-between;
+}
+li{
+    background-color: #E6CBFF;
+    list-style-type: none;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    justify-content: left;
+    text-align: right;
+    border: none;
+    outline: none;
+    text-decoration: #9690E5;
+}
