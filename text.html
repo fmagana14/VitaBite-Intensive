@@ -13,7 +13,7 @@
     <header>
         <!-- <div class="profile-button">
             <a href="profile.html" id="pbutton">profile</a> -->
-            <h3 id="vitaID">VitaBite</h3>
+        <h3 id="vitaID">VitaBite</h3>
         </div>
     </header>
     <h1>VitaBite</h1>
@@ -22,6 +22,17 @@
         <div class="chart-container">
             <div class="chart" id="calorie-chart"></div>
         </div>
+    </div>
+    <div>
+        <label for="site-search"> Calorie count</label>
+        <input type="search" id="site-search" name="l">
+        <select name="" id="meals">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Snack">Snack</option>
+            <option value="Dinner">Dinner</option>
+        </select>
+        <button onclick="addFood()">Add Food</button>
     </div>
     <ul class="nav">
         <li class='nav-item'> <a class="active" href="#Breakfast"> Breakfast:</a>

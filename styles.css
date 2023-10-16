@@ -1,6 +1,7 @@
 header{
-    background-color: red;
+    background-color: #9690E5;
     font-size: 40px;
+    color: #232B4B;
 }
 body{
     background-color: #9690E5;
@@ -16,12 +17,17 @@ div.profile-button{
     display: flex;
     flex-direction: row;
 }
-#pbutton{
+h2{
+    font-size: 40px;
+    text-align: center;
+    color: #232B4B;
+}
+/* #pbutton{
     font-size: 40px;
     color: red;
     text-align: right;
     background-color:black;
-}
+} */
 #vitaID{
     font-size: 40px;
     text-align: left;
@@ -52,12 +58,13 @@ a{
     font-size: 30px;
 }
 .chart-container{
-    background-color: aquamarine;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
+    background-color: #E6CBFF;
+    border: 5px solid #E6CBFF;
+    border-radius: 20px;
+    height: 60px;
     margin: 20px auto;
     max-width: 400px;
+
 }
 .calorie-slider{
     width: 100%;
@@ -67,4 +74,11 @@ a{
     display: block;
     text-align: right;
     margin-top: 5px;
+}
+
+#calorie-chart {
+    height: 100%;
+    background-color: #112945;
+    width: 0px;
+    border-radius: 14px;
 }
