@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,52 @@
     <title>VitaBite</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <header> 
-    <div class="profile-button">
-        <a href="profile.html" id="pbutton">profile</a>
-        <h3 id="vitaID">VitaBite</h3>
-    </div>
-   </header> 
-   <h1>VitaBite</h1>
+    <header>
         <!-- <div class="profile-button">
-            <a href="profile.html" id="pbutton">profile</a>
-        </div> -->
-        <div class="container"
-            <div class="chart-wrap">
-                <div class="chart-info">
-                    <h2>Calories</h2>
-                </div>
-            </div>
-        ></div>
-        <div class="calorie.Chart">
-            <!-- insert pie chart here use JS to create -->
+            <a href="profile.html" id="pbutton">profile</a> -->
+            <h3 id="vitaID">VitaBite</h3>
         </div>
-        <nav class="nav">
-            <ul>
-                <li class='nav-item'> <a class="active" href="#Breakfast"> Breakfast:</a> </li>
-                <button name="add" value="breakfast_info">+</button>
-                <li class='nav-item'><a href="#Lunch">Lunch:</a></li>
-                <button name="add" value="lunch_info">+</button>
-                <li class='nav-item'><a href="#Snack">Snack:</a></li>
-                <button name="add" value="snack_info">+</button>
-                <li class='nav-item'><a href="#Dinner">Dinner:</a></li>
-                <button name="add" value="dinner_info">+</button>
-                <li class='nav-item'><a href="#Water">Water:</a></li>
-                <button name="add" value="water_info">+</button>
-            </ul>
-        </nav>
-        
+    </header>
+    <h1>VitaBite</h1>
+    <div>
+        <h2>Calories</h2>
+        <div class="chart-container">
+            <div class="chart" id="calorie-chart"></div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li class='nav-item'> <a class="active" href="#Breakfast"> Breakfast:</a>
+            <input onchange="updateSliderValue('calorie-breakfast-slider',this.value)" type="range"
+                class="calorie-slider" id="breakfast-slider" min="0" max="1000" step="10" value="0">
+            <span class="calorie-count" id="calorie-breakfast-slider">0</span>
+            <button name="add" value="breakfast_info">+</button>
+            <span onclick="this.parentElement.style.display='none'" class="closeButton">&times;</span>
+        </li>
+        <li class='nav-item'><a href="#Lunch">Lunch:</a>
+            <input onchange="updateSliderValue('calorie-lunch-slider',this.value)" type="range" class="calorie-slider"
+                id="lunch-slider" min="0" max="1000" step="10" value="0">
+            <span class="calorie-count" id="calorie-lunch-slider">0</span>
+            <button name="add" value="lunch_info">+</button>
+        </li>
+        <li class='nav-item'><a href="#Snack">Snack:</a>
+            <input onchange="updateSliderValue('calorie-snack-slider',this.value)" type="range" class="calorie-slider"
+                id="snack-slider" min="0" max="1000" step="10" value="0">
+            <span class="calorie-count" id="calorie-snack-slider">0</span>
+            <button name="add" value="snack_info">+</button>
+        </li>
+        <li class='nav-item'><a href="#Dinner">Dinner:</a>
+            <input onchange="updateSliderValue('calorie-dinner-slider',this.value)" type="range" class="calorie-slider"
+                id="dinner-slider" min="0" max="1000" step="10" value="0">
+            <span class="calorie-count" id="calorie-dinner-slider">0</span>
+            <button name="add" value="dinner_info">+</button>
+        </li>
+        <li class='nav-item'><a href="#Water">Water:</a>
+            <button name="add" value="water_info">+</button>
+        </li>
+    </ul>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -26,25 +26,45 @@ div.profile-button{
     font-size: 40px;
     text-align: left;
 }
-ul{
+.nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 95%;
-    background-color:#E6CBFF;
-    justify-content: space-between;
 }
-li{
+.nav li{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 20px;
     background-color: #E6CBFF;
     list-style-type: none;
-    font-size: 25px;
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 a{
     text-decoration: none;
+    font-size: 30px;
 }
-button{
-    justify-content: left;
-    text-align: right;
+.nav button{
     border: none;
-    outline: none;
-    text-decoration: #9690E5;
+    background-color: #E6CBFF;
+    font-size: 30px;
+}
+.chart-container{
+    background-color: aquamarine;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+.calorie-slider{
+    width: 100%;
+}
+.calorie-count{
+    font-size: 18px;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
 }
